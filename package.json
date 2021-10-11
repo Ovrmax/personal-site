@@ -4,7 +4,9 @@
   "description": "Personal resume site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gsutil ls",
+    "publish": "gsutil -m rsync -r www gs://tessellated.rocks"
   },
   "repository": {
     "type": "git",
