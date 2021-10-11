@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gsutil ls",
+    "dev": "serve www",
     "publish": "gsutil -m rsync -r www gs://tessellated.rocks"
   },
   "repository": {
